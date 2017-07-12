@@ -4,7 +4,7 @@ title: Projects
 navigable: true
 ---
 # Software
-## [Redox OS](https://github.com/redox-os/redox)
+## [Redox OS](https://redox-os.org)
 Redox is a microkernel-based operating system written in Rust. I am currently involved in a lot of ACPI work, specifically developing an AML interpreter for use within the kernel, and to develop a driver for the High Precision Event Timer (HPET), as defined in a document referenced by the ACPI specification.
 
 AML is a bytecode in the ACPI specification, which contains a lot of important details on how the machine runs - it contains certain values needed to power the machine down, for example, and control methods for operating a lot of the machine hardware. This needs to be parsed, and then intercepted, to achieve a lot of important administration tasks, and due to the design of the spec, a recursive descent, multi-pass parser is required, in kernel mode.
