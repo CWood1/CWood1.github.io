@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">{{ site.title }}</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">{{ content }}</h5>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">person</i></h2>
+            <h5 class="center">Who am I?</h5>
+
+            <p class="light">I am a software engineer, and a member of the open source community. I believe software, and by extension computers, should serve a purpose, to improve the lives of those who use it, and benefit from it. I also believe it is my duty to develop my software in such a way as to enable this.</p>
+	    <p class="light">By utilising the skills I acquired during my formative years, during which time I taught myself to code, skills that were later developed formally at university, I believe it is my duty to develop the highest quality software within my capability, and the highest impact software I have access to.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">What do I do?</h5>
+
+            <p class="light">I am a systems developer. This means I primarily work on problems such as operating systems, compilers, network stacks, and so on. I am, however, able to work with a range of technologies, in desktop, web, games, etc. depending on the project.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">fingerprint</i></h2>
+            <h5 class="center">How to contact me</h5>
+
+            <p class="light">My email address is <a href="mailto:{{ site.email }}">{{ site.email }}</a>. If you wish to email me, I would ask if possible for the email to be signed and encrypted. My PGP key fingerprint is `FBD0 378C C687 F429 8863 BFBB B076 9342 0F9B 9E8C`.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+      
+    </div>
+    <div style="background: #ddd">
+    <div class="container last-post">
+    <section>
+        <h5>Latest Post</h5>
+        <ul class="collection">
+        {% for post in site.posts %}
+        <li class="collection-item avatar">
+          {% assign date_format = site.minima.date_format | default: "%m/%d" %}
+          <div class="date-post">{{ post.date | date: date_format }}</div>
+          <span class="title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
+          <p>
+             {{ post.content | truncatewords: 10 }}
+          </p>
+          <a href="{{ post.url | relative_url }}" class="secondary-content"><i class="material-icons">navigate_next</i></a>
+        </li>
+        {% endfor %}
+        </ul>  
+    </section>
+    </div>
+</div>
+
+  </div>
