@@ -5,6 +5,11 @@ baseurl: ""
 url: "https://connorwood.net"
 github_username:  CWood1
 linkedin_username: connorwood
+author: Connor Wood
 
 sass:
     style: compressed
+
+gems:
+  - jekyll-feed
+  
