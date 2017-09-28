@@ -4,6 +4,18 @@ title: Projects
 permalink: /Projects/
 ---
 # Software
+  <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="607113dc-2e1c-4eda-b865-149b83378a5b"></div>
+  <script type="text/javascript">
+    (function() {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = '//cdn.youracclaim.com/assets/utilities/embed.js';
+      var o = document.getElementsByTagName('script')[0];
+      o.parentNode.insertBefore(s, o);
+      })();
+  </script>
+
 ##### [Redox OS](https://redox-os.org)
 Redox is a microkernel-based operating system written in Rust. I am currently involved in a lot of ACPI work, specifically developing an AML interpreter for use within the kernel, and to develop a driver for the High Precision Event Timer (HPET), as defined in a document referenced by the ACPI specification.
 
