@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The History of Computing, Part I: The Early Days
+title: "The History of Computing, Part I: The Early Days"
 ---
 
 # Looming Changes
