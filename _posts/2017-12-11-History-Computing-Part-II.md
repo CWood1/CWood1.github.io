@@ -32,3 +32,5 @@ Eckert then went on to work with the US Navy, automating the production of navig
 Later, at Columbia University, Eckert commissioned from IBM a large computing machine, known as the Selective Sequence Electronic Calculator, or SSEC, bringing scientific computing into the era of computers, rather than tabulators. This work was completed in 1947.
 
 Meanwhile, Feynman and Metropolis worked on the automation of computing on the Manhatten Project, once again using IBM equipment. Details on the use of this computation equipment are few, due to the nature of the project itself. Both Feynman and Metropolis were influential in computing in later years as well, Feynman with work in supercomputing and quantum computing, and Metropolis working on teams to develop bespoke computers as was the default in the 1940s, as well as pioneering the Monte Carlo method of simulation, a technique still used today for scientific computation.
+
+Also visible at [EsseX-Files](https://essexfiles.blogspot.co.uk/2017/12/the-history-of-computing-part-ii.html)
