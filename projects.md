@@ -31,7 +31,7 @@ Distributed DHCP Management Protocol - a protocol layer to sit on top of DHCP, i
 A project completed as part of a team, for a competition while at university. I did the bulk of the programming, though the design itself was not mine. The intention behind the competition, and the design space we were operating in, was to design a game to call attention to blame culture, and to prompt people to think deeper about the assumptions they make.
 
 # Languages
-I am currently working on learning Greek, though I am currently only at beginner level. I also have a beginner understanding of Mandarin and Spanish. Overall, I wish to learn, to at least B2 or A1 level, the following:
+I am currently working on learning Greek, though I am currently only at beginner level. I also have a beginner understanding of Mandarin and Spanish. Overall, I wish to learn, to at least B2 or C1 level, the following:
 
  - Greek
  - Mandarin Chinese
