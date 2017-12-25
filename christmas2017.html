@@ -1,0 +1,98 @@
+<html>
+  <body>
+    <canvas id="christmas" width="300" height="300"></canvas>
+
+    <script>
+     function draw_tree(ctx, depth) {
+       if(depth == 0) {
+	 return;
+       }
+       
+       ctx.beginPath();
+       ctx.moveTo(0, 0);
+       ctx.lineTo(0, 50);
+       ctx.stroke();
+
+       ctx.save();
+       ctx.translate(0, 50);
+       ctx.rotate((Math.PI / 180) * 30);
+       ctx.scale(0.8, 0.8);
+       draw_tree(ctx, depth - 1);
+       ctx.restore();
+
+       ctx.save();
+       ctx.translate(0, 50);
+       ctx.rotate((Math.PI / 180) * -30);
+       ctx.scale(0.8, 0.8);
+       draw_tree(ctx, depth - 1);
+       ctx.restore();
+     }
+
+     function tree(ctx) {
+       ctx.fillStyle = 'rgb(0, 200, 0)';
+       ctx.strokeStyle = 'rgb(0, 200, 0)';
+       ctx.lineWidth = 3;
+
+       draw_tree(ctx, 10);
+     }
+
+     function light(ctx, depth) {
+       position = Math.floor(Math.random() * 11);
+       
+       if(position == 11 || depth == 0) {
+	 red = Math.floor(Math.random() * 256);
+	 green = Math.floor(Math.random() * 256);
+	 blue = Math.floor(Math.random() * 256);
+	 
+	 ctx.fillStyle = 'rgb(' + red + ', ' + green + ', ' + blue + ')';
+	 ctx.beginPath();
+	 ctx.arc(0, 50, 25, 0, 2 * Math.PI);
+	 ctx.fill();
+       } else if(position > 5) {
+	 ctx.save();
+	 ctx.translate(0, 50);
+	 ctx.rotate((Math.PI / 180) * 30);
+	 ctx.scale(0.8, 0.8);
+	 light(ctx, depth - 1);
+	 ctx.restore();
+       } else {
+	 ctx.save();
+	 ctx.translate(0, 50);
+	 ctx.rotate((Math.PI / 180) * -30);
+	 ctx.scale(0.8, 0.8);
+	 light(ctx, depth - 1);
+	 ctx.restore();
+       }
+     }
+
+     function lights(ctx, number) {
+       for(var i = 0; i < number; i++) {
+	 light(ctx, 10);
+       }
+     }
+
+     function render(ctx){ 
+       ctx.translate(150, 300);
+       ctx.rotate(Math.PI);
+       
+       internal = function() {
+	 ctx.clearRect(-300, 0, 300, 300);
+	 ctx.clearRect(0, 0, 300, 300);
+	 
+	 tree(ctx);
+	 lights(ctx, 50);
+       };
+
+       setInterval(internal, 1500);
+       internal();
+     }
+
+     (function() {
+       var canvas = document.getElementById('christmas');
+       var ctx = canvas.getContext('2d');
+
+       render(ctx);
+     })();
+    </script>
+  </body>
+</html>
