@@ -21,14 +21,11 @@ Redox is a microkernel-based operating system written in Rust. I am currently in
 
 AML is a bytecode in the ACPI specification, which contains a lot of important details on how the machine runs - it contains certain values needed to power the machine down, for example, and control methods for operating a lot of the machine hardware. This needs to be parsed, and then intercepted, to achieve a lot of important administration tasks, and due to the design of the spec, a recursive descent, multi-pass parser is required, in kernel mode.
 
-##### LLProt
-As it is in its early stages still, LLProt is yet to be released as open source. LLProt is a DSL, for specifying the underlying structure of network protocols. It is similar to ProtoBuf, however with the constraint that bit- and byte-level fidelity is required, to ensure interoperability with existing protocols.
-
-##### [DDMP](https://github.com/CWood1/DDMP)
-Distributed DHCP Management Protocol - a protocol layer to sit on top of DHCP, in order to facilitate the allocation of addresses from multiple servers, from the same address pool. Development focuses primarily around mesh networks, however project may be useful in other contexts, such as data centres.
-
 ##### [Patient Panic](https://github.com/CWood1/chimed)
 A project completed as part of a team, for a competition while at university. I did the bulk of the programming, though the design itself was not mine. The intention behind the competition, and the design space we were operating in, was to design a game to call attention to blame culture, and to prompt people to think deeper about the assumptions they make.
+
+##### Compiler
+As part of my university education, I am writing a toy compiler in Haskell, for a toy language based loosely on Rust. Once this has been accepted by the university, to avoid possible claims of plagiarism, I intend to develop this as an open source application, to be compatible with the Rust compiler.
 
 # Languages
 I am currently working on learning Greek, though I am currently only at beginner level. I also have a beginner understanding of Mandarin and Spanish. Overall, I wish to learn, to at least B2 or C1 level, the following:
