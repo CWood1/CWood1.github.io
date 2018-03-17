@@ -7,6 +7,9 @@ github_username:  CWood1
 linkedin_username: connorwood
 author: Connor Wood
 
+disqus:
+  shortname: bear-d
+
 sass:
     style: compressed
 
